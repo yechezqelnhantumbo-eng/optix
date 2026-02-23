@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parceiros</title>
+
+  <!-- CSS Interno -->
+  <style>
+    .parceiros-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .parceiros-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #2C3E50;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .parceiros-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+      animation: rotacionar 10s linear infinite;
+    }
+
+    @keyframes rotacionar {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .logo img {
+        width: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Seção de Parceiros -->
+  <div class="parceiros-section">
+    <h2 class="parceiros-title">Trusted by:</h2>
+    <div class="parceiros-container">
+      <div class="logo"><img src="logo1.png" alt="Parceiro 1"></div>
+      <div class="logo"><img src="logo2.png" alt="Parceiro 2"></div>
+      <div class="logo"><img src="logo3.png" alt="Parceiro 3"></div>
+      <!-- Mais logotipos podem ser adicionados aqui -->
+    </div>
+  </div>
+
+</body>
+</html>
